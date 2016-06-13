@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.w3schools.com"
+            xmlns="http://www.w3schools.com"
+            elementFormDefault="qualified">
+    <xsd:element name="StudentRegistartionRs">
+        <xsd:complexType>
+        <xsd:element name="stId" type="xsd:integer"/>
+        </xsd:complexType>
+        <xsd:complexType>
+            <xsd:sequence>
+            <xsd:choice>
+                <xsd:element name="success" type="xsd:string"/>
+                <xsd:element name="failure" type="xsd:string"/>
+            </xsd:choice>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
